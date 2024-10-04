@@ -1,0 +1,18 @@
+<!DOCTYPR html>
+<html>
+    <head></head>
+    <body>
+        <h1>Excavaciones</h1>
+
+        {% for post in excavacion_mostrar %}
+            <article>
+                <p><b> Ubicacion: {{ post.ubicacion}} </b></p>
+                <ul>
+                    <li> Fecha: {{ post.fecha }}</li>
+                    <li> Dinosaurio descubierto: {{ post.dinosaurio }}</li><br>
+                </ul>
+            </article>
+        {% endfor %}
+
+    </body>
+</html>

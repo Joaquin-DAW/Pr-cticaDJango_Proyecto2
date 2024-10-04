@@ -6,9 +6,11 @@
 
         {% for post in dinosaurio_mostrar %}
             <article>
-                <h2> Cuidador: {{ post.cuidador}} </h2>
-                <p> Nombre: {{ post.nombre }}</p>
-                <p> Tipo: {{ post.tipo }}</p><br>
+                <p><b> Nombre: {{ post.nombre}} </b></p>
+                <ul>
+                    <li> Era: {{ post.era }}</li>
+                    <li> Dieta: {{ post.dieta }}</li><br>
+                </ul>
             </article>
         {% endfor %}
 

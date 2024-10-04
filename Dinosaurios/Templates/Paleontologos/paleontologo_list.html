@@ -1,0 +1,18 @@
+<!DOCTYPR html>
+<html>
+    <head></head>
+    <body>
+        <h1>Paleontólogos</h1>
+
+        {% for post in paleontologo_mostrar %}
+            <article>
+                <p><b> Nombre: {{ post.nombre}} </b></p>
+                <ul>
+                    <li> Especialidad: {{ post.especialidad }}</li>
+                    <li> Años de experiencia: {{ post.anos_experiencia }}</li><br>
+                </ul>
+            </article>
+        {% endfor %}
+
+    </body>
+</html>
